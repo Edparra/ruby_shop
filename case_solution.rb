@@ -26,7 +26,7 @@ when (choice == "PANTS"   &&(money - pants >= 0) )
 when (choice == "SOCKS" &&(money - socks >= 0) )
   puts "ok, here are your socks for $#{socks}. Your change is $#{money - socks}"
   #needs a fix for pants and socks
-when ( choice !=  ("SHIRT" || "PANTS" || "SOCKS"))
+when ( choice !=  "SHIRT" && (choice != "PANTS" && (choice != "SOCKS")))
 puts "wrong choice! We don't have that!!!"
 else
   puts "Sorry you don't have enough money"
